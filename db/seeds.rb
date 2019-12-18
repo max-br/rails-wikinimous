@@ -13,4 +13,4 @@ Article.destroy_all
   Article.create(title: Faker::TvShows::GameOfThrones.character, content: Faker::TvShows::GameOfThrones.quote)
 end
 
-puts `I created #{Article.count} articles!!`
+puts "I created #{Article.count} articles!!"
