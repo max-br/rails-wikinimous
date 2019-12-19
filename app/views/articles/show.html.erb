@@ -4,10 +4,16 @@
   <p class="content.show">"<%= @article.content %>"</p>
 
 
-  <%= link_to edit_article_path(@article) do %>
+  <%= link_to edit_article_path do %>
       <button class="btn btn-dark">Edit</button>
     <% end %>
 
+
+   <%= link_to article_path, method: :delete, data: {
+              confirm: 'Are you sure?'
+            } do %>
+        <button class="btn btn-light">Delete</button>
+     <% end %>
 
   <%= link_to articles_path do %>
       <button class="btn btn-light">Back to list</button>
