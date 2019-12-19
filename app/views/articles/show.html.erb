@@ -1,1 +1,9 @@
-show.html.erb
+<div class="container">
+  <h2 class="title-show"><%= @article.title %></h2>
+
+  <p class="content.show">"<%= @article.content %>"</p>
+
+  <%= link_to articles_path do %>
+      <button class="btn btn-light">Back to list</button>
+    <% end %>
+</div>
